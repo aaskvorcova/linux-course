@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Скворцова Анастасия | Персональный сайт</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            display: block;
+            border: 4px solid white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            background: #ecf0f1;
+        }
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .section {
+            background: white;
+            margin: 30px 0;
+            padding: 25px 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+        }
+        h3 {
+            color: #34495e;
+            margin: 15px 0 8px;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .skill-tag {
+            background: #e8f4fd;
+            color: #2980b9;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+        .post-card {
+            background: #f8f9fa;
+            padding: 18px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+            transition: transform 0.2s;
+        }
+        .post-card:hover {
+            transform: translateX(5px);
+        }
+        .post-title {
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+        .post-date {
+            color: #7f8c8d;
+            font-size: 0.85em;
+            margin-bottom: 10px;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: #3498db;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .lang-btn {
+            background: #ecf0f1;
+            color: #2c3e50;
+            padding: 6px 14px;
+            text-decoration: none;
+            border-radius: 20px;
+            margin-left: 10px;
+            font-size: 0.9em;
+        }
+        .lang-btn:hover {
+            background: #3498db;
+            color: white;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul li {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        ul li:before {
+            content: "•";
+            color: #3498db;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch">
+            <a href="#" onclick="switchLanguage('ru')" class="lang-btn">Русский</a>
+            <a href="#" onclick="switchLanguage('en')" class="lang-btn">English</a>
+        </div>
+        
+        <!-- РУССКАЯ ВЕРСИЯ -->
+        <div id="ru-content">
+            <header>
+                <img src="https://ui-avatars.com/api/?background=3498db&color=fff&size=180&name=AS" alt="Анастасия Скворцова" class="profile-img">
+                <h1>Скворцова Анастасия</h1>
+                <div class="subtitle">Студент | Программист C++ | Искусственный интеллект</div>
+                <div class="social-links">
+                    <a href="https://github.com/aaskvorcova" target="_blank">GitHub</a>
+                    <a href="https://elibrary.ru/" target="_blank">eLibrary</a>
+                    <a href="https://scholar.google.com/" target="_blank">Google Scholar</a>
+                </div>
+            </header>
+
+            <div class="section">
+                <h2>📖 Биография</h2>
+                <p>Студентка <strong>Российского университета дружбы народов (РУДН)</strong>. Увлекаюсь программированием на C++ и искусственным интеллектом. Постоянно изучаю новые технологии и применяю их в учебных проектах.</p>
+            </div>
+
+            <div class="section">
+                <h2>💡 Интересы</h2>
+                <ul>
+                    <li>Программирование на C++</li>
+                    <li>Искусственный интеллект и машинное обучение</li>
+                    <li>Системы контроля версий (Git)</li>
+                    <li>Разработка на Linux (Fedora)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>🎓 Образование</h2>
+                <ul>
+                    <li><strong>Российский университет дружбы народов (РУДН)</strong> — Студент, 2026</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>🛠 Навыки (Skills)</h2>
+                <div class="skills-list">
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Git / GitHub</span>
+                    <span class="skill-tag">Linux (Fedora)</span>
+                    <span class="skill-tag">Hugo</span>
+                    <span class="skill-tag">HTML/CSS</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>💼 Опыт (Experience)</h2>
+                <ul>
+                    <li><strong>Учебные проекты на C++</strong> — Реализация алгоритмов и структур данных</li>
+                    <li><strong>Работа в терминале Linux</strong> — Администрирование и автоматизация</li>
+                    <li><strong>Создание сайтов</strong> — Hugo, GitHub Pages, HTML/CSS</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>🏆 Достижения (Accomplishments)</h2>
+                <ul>
+                    <li>Создан персональный сайт на Hugo и размещён на GitHub Pages</li>
+                    <li>Освоены основы Git и работа с удалёнными репозиториями</li>
+                    <li>Написано 7 технических постов (Git, Markdown, отчёты, языки программирования)</li>
+                    <li>Настроен двуязычный сайт (русский/английский)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>📝 Посты</h2>
+                <div class="post-card">
+                    <h3 class="post-title">Управление версиями: Git</h3>
+                    <div class="post-date">30 мая 2026</div>
+                    <p>Git — система контроля версий, которая помогает отслеживать изменения в коде. Основные команды: git init, git add, git commit, git push.</p>
+                </div>
+                <div class="post-card">
+                    <h3 class="post-title">Язык разметки Markdown</h3>
+                    <div class="post-date">30 мая 2026</div>
+                    <p>Markdown — лёгкий язык разметки для форматирования текста. Используется в GitHub, блогах и документации.</p>
+                </div>
+                <div class="post-card">
+                    <h3 class="post-title">Оформление отчётов по программированию</h3>
+                    <div class="post-date">30 мая 2026</div>
+                    <p>Структура отчёта: титульный лист, цель, алгоритм, листинг кода, результаты, выводы. Инструменты: LaTeX, Markdown.</p>
+                </div>
+                <div class="post-card">
+                    <h3 class="post-title">Языки научного программирования</h3>
+                    <div class="post-date">30 мая 2026</div>
+                    <p>Сравнение Python, R, Julia и C++ для научных вычислений. C++ обеспечивает максимальную производительность.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🔗 Научные и библиометрические ресурсы</h2>
+                <ul>
+                    <li><a href="https://github.com/aaskvorcova" target="_blank">GitHub</a></li>
+                    <li><a href="https://elibrary.ru/" target="_blank">eLibrary</a></li>
+                    <li><a href="https://scholar.google.com/" target="_blank">Google Scholar</a></li>
+                    <li><a href="https://orcid.org/" target="_blank">ORCID</a></li>
+                    <li><a href="https://www.researchgate.net/" target="_blank">ResearchGate</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- АНГЛИЙСКАЯ ВЕРСИЯ -->
+        <div id="en-content" style="display: none;">
+            <header>
+                <img src="https://ui-avatars.com/api/?background=3498db&color=fff&size=180&name=AS" alt="Anastasia Skvortsova" class="profile-img">
+                <h1>Anastasia Skvortsova</h1>
+                <div class="subtitle">Student | C++ Programmer | Artificial Intelligence</div>
+                <div class="social-links">
+                    <a href="https://github.com/aaskvorcova" target="_blank">GitHub</a>
+                    <a href="https://elibrary.ru/" target="_blank">eLibrary</a>
+                    <a href="https://scholar.google.com/" target="_blank">Google Scholar</a>
+                </div>
+            </header>
+
+            <div class="section">
+                <h2>📖 Biography</h2>
+                <p>Student at <strong>Peoples' Friendship University of Russia (RUDN)</strong>. Passionate about C++ programming and artificial intelligence. Constantly learning new technologies and applying them in academic projects.</p>
+            </div>
+
+            <div class="section">
+                <h2>💡 Interests</h2>
+                <ul>
+                    <li>C++ Programming</li>
+                    <li>Artificial Intelligence & Machine Learning</li>
+                    <li>Version Control (Git)</li>
+                    <li>Linux Development (Fedora)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>🎓 Education</h2>
+                <ul>
+                    <li><strong>Peoples' Friendship University of Russia (RUDN)</strong> — Student, 2026</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>🛠 Skills</h2>
+                <div class="skills-list">
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Git / GitHub</span>
+                    <span class="skill-tag">Linux (Fedora)</span>
+                    <span class="skill-tag">Hugo</span>
+                    <span class="skill-tag">HTML/CSS</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>💼 Experience</h2>
+                <ul>
+                    <li><strong>Educational projects in C++</strong> — Algorithms and Data Structures implementation</li>
+                    <li><strong>Linux Terminal Work</strong> — Fedora administration and automation</li>
+                    <li><strong>Website Creation</strong> — Hugo, GitHub Pages, HTML/CSS</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>🏆 Accomplishments</h2>
+                <ul>
+                    <li>Created a personal website with Hugo deployed on GitHub Pages</li>
+                    <li>Learned Git basics and remote repository management</li>
+                    <li>Wrote 7 technical posts (Git, Markdown, reports, programming languages)</li>
+                    <li>Set up a bilingual website (Russian/English)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>📝 Posts</h2>
+                <div class="post-card">
+                    <h3 class="post-title">Version Control: Git</h3>
+                    <div class="post-date">May 30, 2026</div>
+                    <p>Git is a version control system that helps track code changes. Basic commands: git init, git add, git commit, git push.</p>
+                </div>
+                <div class="post-card">
+                    <h3 class="post-title">Markdown Markup Language</h3>
+                    <div class="post-date">May 30, 2026</div>
+                    <p>Markdown is a lightweight markup language used in GitHub, blogs, and documentation.</p>
+                </div>
+                <div class="post-card">
+                    <h3 class="post-title">Programming Report Formatting</h3>
+                    <div class="post-date">May 30, 2026</div>
+                    <p>Report structure: title page, goal, algorithm, code listing, results, conclusion. Tools: LaTeX, Markdown.</p>
+                </div>
+                <div class="post-card">
+                    <h3 class="post-title">Scientific Programming Languages</h3>
+                    <div class="post-date">May 30, 2026</div>
+                    <p>Comparison of Python, R, Julia, and C++ for scientific computing. C++ offers maximum performance.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🔗 Scientific and Bibliometric Resources</h2>
+                <ul>
+                    <li><a href="https://github.com/aaskvorcova" target="_blank">GitHub</a></li>
+                    <li><a href="https://elibrary.ru/" target="_blank">eLibrary</a></li>
+                    <li><a href="https://scholar.google.com/" target="_blank">Google Scholar</a></li>
+                    <li><a href="https://orcid.org/" target="_blank">ORCID</a></li>
+                    <li><a href="https://www.researchgate.net/" target="_blank">ResearchGate</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Скворцова Анастасия | Персональный сайт</p>
+        </div>
+    </footer>
+
+    <script>
+        function switchLanguage(lang) {
+            const ruContent = document.getElementById('ru-content');
+            const enContent = document.getElementById('en-content');
+            if (lang === 'ru') {
+                ruContent.style.display = 'block';
+                enContent.style.display = 'none';
+            } else {
+                ruContent.style.display = 'none';
+                enContent.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
